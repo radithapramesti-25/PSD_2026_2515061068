@@ -14,46 +14,53 @@ c. Source Code & Penjelasan Logika<br>
 <img width="1715" height="853" alt="Screenshot 2026-05-03 144210" src="https://github.com/user-attachments/assets/747ff662-afda-4d21-a391-5d9ab695d6ef" />
 <img width="1707" height="380" alt="Screenshot 2026-05-03 144235" src="https://github.com/user-attachments/assets/5da5b00b-c14e-4bb3-9a92-85d721088037" />
 Penjelasan Logika Baris demi Baris:<br>
-Baris 1: Komentar judul fungsi sebagai identitas algoritma Insertion Sort.<br>
-Baris 2: Deklarasi fungsi insertion_sort_uang dengan parameter list uang dan jumlahnya.<br>
-Baris 3: Perulangan utama untuk mengecek uang mulai dari lembar kedua hingga akhir.<br>
-Baris 4: Komentar mengenai proses pengambilan elemen untuk dibandingkan.<br>
-Baris 5: Menyimpan nominal uang yang sedang dicek ke variabel sementara (temp).<br>
-Baris 6: Menentukan indeks j (uang di sebelah kiri temp) sebagai pembanding.<br>
-Baris 7: (Kosong) Ruang jeda untuk keterbacaan kode.<br>
-Baris 8: Komentar mengenai logika penggeseran nominal yang lebih besar.<br>
-Baris 9: Perulangan while untuk mencari posisi penyisipan yang tepat.<br>
-Baris 10: Syarat geser: selama uang di kiri lebih besar dari uang di tangan (temp).<br> 
-Baris 11: Menggeser uang yang lebih besar ke posisi kanan.<br>
-Baris 12: Mundur ke indeks sebelumnya untuk pengecekan lebih lanjut.<br> 
-Baris 13: Menyisipkan uang temp ke posisi yang sudah benar.<br>
-Baris 14: (Kosong/Indentasi keluar) Penanda akhir dari blok fungsi algoritma.<br>
-Baris 15: Deklarasi fungsi main() sebagai pusat kendali program.<br>
-Baris 16: Mencetak judul besar program di terminal kasir.<br>
-Baris 17: Membuka blok try untuk menangkap kesalahan input angka.<br>
-Baris 18: Mengambil input jumlah lembar uang dari kasir.<br>
-Baris 19: Blok except jika kasir menginput selain angka (misal: huruf).<br> 
-Baris 20: Pesan peringatan bahwa input harus berupa angka bulat.<br>
-Baris 21: Menghentikan program jika input jumlah lembar tidak valid.<br>
-Baris 22: (Kosong) Jeda antar logika input.<br>
-Baris 23: Inisialisasi list uang_kertas sebagai wadah penyimpanan data.<br>
-Baris 24: Mencetak instruksi pengisian nominal untuk kasir.<br>
-Baris 25: Perulangan untuk meminta input nominal sebanyak jumlah lembar.<br>
-Baris 26: Loop while True untuk memvalidasi setiap nominal satu per satu.<br>
-Baris 27: Blok try untuk memastikan nominal adalah angka integer.<br>
-Baris 28: Menyimpan input nominal ke dalam list menggunakan .append().<br> 
-Baris 29: Keluar dari loop validasi jika input nominal sudah benar.<br>
-Baris 30: Menangkap error jika nominal yang diinput bukan angka.<br>
-Baris 31: Pesan edukasi agar kasir memasukkan angka nominal yang valid.<br> 
-Baris 32: (Kosong/Print Jeda) Memberikan jarak visual sebelum menampilkan hasil proses.<br>
-Baris 33: Komentar penanda penampilan kondisi data awal.<br>
-Baris 34: Mencetak daftar uang yang masih acak/berantakan.<br>
-Baris 35: (Kosong) Jeda sebelum pemanggilan fungsi sorting.<br>
-Baris 36: Memanggil fungsi insertion_sort_uang untuk merapikan data.<br>
-Baris 37: (Kosong) Jeda sebelum menampilkan hasil akhir.<br>
-Baris 38: Mencetak notifikasi bahwa proses merapikan telah selesai.<br> 
-Baris 39: Mencetak judul untuk daftar hasil uang yang sudah rapi.<br>
-Baris 40: Perulangan untuk mengakses setiap uang yang sudah terurut.<br> 
-Baris 41: Mencetak nominal dengan format mata uang "Rp" secara berjejer.<br>
-Baris 42: (Kosong) Jeda estetika di akhir output.<br>
-Baris 43: Menjalankan fungsi main() saat script dieksekusi secara langsung.<br>
+Baris 1: Komentar judul program yang menjelaskan tujuan kode secara keseluruhan.<br>
+Baris 2: Mendefinisikan fungsi insertion_sort_uang dengan parameter arr (list uang) dan n (jumlah lembar).<br>
+Baris 3: Perulangan for dimulai dari indeks ke-1 (lembar kedua) hingga terakhir, karena lembar pertama dianggap sudah terurut sementara.<br>
+Baris 4: Mengambil nilai nominal uang pada posisi i dan menyimpannya di variabel temp.<br>
+Baris 5: Menentukan variabel j sebagai penunjuk posisi satu tingkat di sebelah kiri i.<br>
+Baris 6: (Baris kosong/Spasi) Digunakan untuk memisahkan inisialisasi variabel dengan logika perbandingan.<br>
+Baris 7: Perulangan while dimulai untuk membandingkan temp dengan uang-uang di sisi kiri.Syarat perulangan: selama indeks j belum habis dan nominal di arr[j] lebih besar dari temp.<br>
+Baris 8: Menggeser nominal uang yang lebih besar ke kanan satu posisi (j + 1) untuk membuka celah penyisipan.<br>
+Baris 9: Mengurangi nilai j untuk terus mengecek posisi uang lebih jauh ke arah kiri.<br>
+Baris 10: Menyisipkan nilai temp ke posisi yang tepat setelah tidak ada lagi uang yang lebih besar di kirinya.<br>
+Baris 11: (Baris kosong/Spasi) Digunakan untuk memisahkan inisialisasi variabel dengan logika perbandingan.<br>
+Baris 12: Mendefinisikan fungsi main() sebagai pusat kendali jalannya program.<br>
+Baris 13: Mencetak judul besar program ke layar terminal.<br>
+Baris 14: Membuka blok try untuk mengantisipasi kesalahan input jumlah lembar uang.<br>
+Baris 15: Mengambil input jumlah lembar dari pengguna dan mengubahnya menjadi integer.<br>
+Baris 16: Blok except yang menangkap kesalahan jika pengguna memasukkan selain angka pada jumlah lembar.<br>
+Baris 17: Menampilkan pesan peringatan bahwa input tidak valid.<br>
+Baris 18: Menghentikan fungsi dengan return jika terjadi kesalahan input fatal.<br>
+Baris 19: (Baris kosong/Spasi) Jeda pemisah antar blok logika input.<br>
+Baris 20: Inisialisasi list kosong uang_kertas untuk menampung data nominal.<br>
+Baris 21: Mencetak instruksi cara memasukkan nominal uang.<br>
+Baris 22: Perulangan for untuk meminta input nominal sebanyak n kali.<br>
+Baris 23: Loop while True dimulai untuk memastikan setiap nominal yang dimasukkan valid sebelum lanjut ke lembar berikutnya.<br>
+Baris 24: Blok try untuk memvalidasi setiap input nominal lembar uang.<br>
+Baris 25: Mengambil input nominal per lembar berdasarkan urutan ke-i+1.<br>
+Baris 26: Menambahkan nominal yang valid ke dalam list uang_kertas menggunakan .append().<br>
+Baris 27: Keluar dari while True (break) karena input nominal lembar tersebut sudah benar.<br>
+Baris 28: Blok except untuk menangkap kesalahan jika nominal bukan berupa angka.<br>
+Baris 30: Menampilkan pesan kesalahan khusus untuk nominal uang.<br>
+Baris 30: (Baris kosong/Spasi) Jeda sebelum menampilkan status data awal.<br>
+Baris 31: Mencetak daftar nominal uang yang masih dalam kondisi acak.<br>
+Baris 32: Mencetak daftar nominal uang yang masih dalam kondisi acak.<br>
+Baris 33: Komentar penjelas bahwa tahap selanjutnya adalah pemanggilan fungsi pengurutan.<br>
+Baris 34: Mengeksekusi fungsi insertion_sort_uang untuk merapikan isi list uang_kertas.<br>
+Baris 35: (Baris kosong/Spasi) Jeda visual setelah proses pengurutan.<br>
+Baris 36: Mencetak informasi bahwa proses merapikan telah selesai dilakukan.<br>
+Baris 37: Mencetak label untuk hasil akhir pengurutan.<br>
+Baris 38: Perulangan for untuk mengakses setiap nominal uang yang kini sudah terurut.<br>
+Baris 39: Mencetak nominal uang dengan format "Rp" secara menyamping menggunakan end=" ".<br>
+Baris 40: mencetak uang yang sudah dirapihkan.<br>
+Baris 41: Memberikan baris kosong baru di akhir daftar agar tampilan terminal rapi.<br>
+Baris 42: Kondisi if __name__ == "__main__": untuk menjalankan program hanya jika file ini dieksekusi langsung.<br>
+Baris 43: Memanggil fungsi main() untuk memulai seluruh alur kerja program.<br>
+<br>
+outputnya:
+<img width="1598" height="432" alt="Screenshot 2026-05-04 191146" src="https://github.com/user-attachments/assets/b5a9bde5-23a7-4537-80a5-990f72f3d522" />
+Kasir memasukkan jumlah 5 lembar uang. Nominal yang dimasukkan secara bertahap adalah 10000, 20000, 2000, 50000, dan 10000.<br>
+Program menampilkan daftar nominal dalam bentuk list sesuai urutan input yang masih acak (berantakan): [10000, 20000, 2000, 50000, 10000].<br>
+Program menjalankan fungsi insertion_sort_uang untuk membandingkan dan menggeser posisi uang hingga urut.<br>
+Hasil Akhir: Setelah proses merapikan selesai, uang ditampilkan secara berurutan dari nominal terkecil ke terbesar: Rp2000 Rp10000 Rp10000 Rp20000 Rp50000.<br>
