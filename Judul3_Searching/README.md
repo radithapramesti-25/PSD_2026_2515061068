@@ -19,7 +19,7 @@ Baris 2: Mencetak judul status parkir.<br>
 Baris 3: Melakukan perulangan untuk mengecek setiap indeks list.<br>
 Baris 4: Mencetak nomor slot dan statusnya secara menyamping.<br>
 Baris 5: Mencetak baris baru untuk kerapian.<br>
-Baris 6: 
+Baris 6: (Baris kosong/spasi) untuk memisahkan inisialisasi variable.<br>
 Baris 7: Membuat fungsi proses_parkir untuk mengolah pilihan user.<br>
 Baris 8: Mengubah pilihan user menjadi nomor indeks (pilihan - 1).<br>
 Baris 9: Memvalidasi apakah nomor slot tersedia dalam daftar.<br>
@@ -32,11 +32,11 @@ Baris 15: Menghentikan fungsi dengan status sukses (True).<br>
 Baris 16: Blok jika slot tidak kosong (sudah terisi).<br>
 Baris 17: Mencetak pesan bahwa slot sudah penuh.<br>
 Baris 18: Menghentikan fungsi dengan status gagal (False).<br>
-Baris 19: 
+Baris 19: (Baris kosong/spasi) untuk memisahkan inisialisasi variable.<br>
 Baris 20: Membuat fungsi main sebagai pusat program.<br>
 Baris 21: Membuat list parkiran_mall sebagai database awal.<br>
 Baris 22: Mencetak header nama aplikasi.<br>
-Baris 23: 
+Baris 23: (Baris kosong/spasi) untuk memisahkan inisialisasi variable.<br>
 Baris 24: Memulai perulangan agar program terus berjalan.<br>
 Baris 25: Memanggil fungsi untuk menampilkan denah terbaru.<br>
 Baris 26: Memulai blok try untuk mencegah error input bukan angka.<br>
@@ -47,9 +47,14 @@ Baris 30: Keluar dari perulangan dan menutup program.<br>
 Baris 31: Menjalankan fungsi proses parkir dengan input user.<br>
 Baris 32: Blok jika terjadi kesalahan tipe data (bukan angka).<br>
 Baris 33: Mencetak peringatan agar memasukkan angka saja.<br>
-Baris 32: 
+Baris 32: (Baris kosong/spasi) untuk memisahkan inisialisasi variable.<br>
 Baris 35: Mengecek apakah file dijalankan sebagai program utama.<br>
 Baris 36: Memanggil fungsi main() untuk memulai aplikasi.<br>
 <br>
 outputnya:
 <img width="1605" height="354" alt="Screenshot 2026-05-09 194903" src="https://github.com/user-attachments/assets/bc8e4479-3e25-49e9-b673-45ce96af769d" />
+Penjelasannya:<br>
+Saat program pertama kali dijalankan, sistem menampilkan judul "=== SISTEM RESERVASI PARKIR MALL ===" diikuti dengan "Status Parkir Saat Ini". Program menampilkan 8 buah slot parkir.
+Terlihat bahwa slot 2, 5, 6, dan 7 berstatus [KOSONG], sedangkan sisanya (1, 3, 4, 8) sudah [ISI]. Ini adalah data awal yang berasal dari list parkiran_mall. program menampilkan "Pilih nomor slot untuk parkir (atau 0 untuk keluar), memerintahkan pengguna untuk memilih slot kosong yang tersedia. Pengguna memilih slot 6. Slot terisi. menampilkan 8 buah slot parkir dengan nomor 6 yang sudah terisi.
+<br>
+Link youtube:<br>
