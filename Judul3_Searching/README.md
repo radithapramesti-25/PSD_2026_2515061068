@@ -47,7 +47,7 @@ Baris 30: Keluar dari perulangan dan menutup program.<br>
 Baris 31: Menjalankan fungsi proses parkir dengan input user.<br>
 Baris 32: Blok jika terjadi kesalahan tipe data (bukan angka).<br>
 Baris 33: Mencetak peringatan agar memasukkan angka saja.<br>
-Baris 32: (Baris kosong/spasi) untuk memisahkan inisialisasi variable.<br>
+Baris 34: (Baris kosong/spasi) untuk memisahkan inisialisasi variable.<br>
 Baris 35: Mengecek apakah file dijalankan sebagai program utama.<br>
 Baris 36: Memanggil fungsi main() untuk memulai aplikasi.<br>
 <br>
