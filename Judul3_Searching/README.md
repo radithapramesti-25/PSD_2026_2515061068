@@ -58,3 +58,4 @@ Saat program pertama kali dijalankan, sistem menampilkan judul "=== SISTEM RESER
 Terlihat bahwa slot 2, 5, 6, dan 7 berstatus [KOSONG], sedangkan sisanya (1, 3, 4, 8) sudah [ISI]. Ini adalah data awal yang berasal dari list parkiran_mall. program menampilkan "Pilih nomor slot untuk parkir (atau 0 untuk keluar), memerintahkan pengguna untuk memilih slot kosong yang tersedia. Pengguna memilih slot 6. Slot terisi. menampilkan 8 buah slot parkir dengan nomor 6 yang sudah terisi.
 <br>
 Link youtube:<br>
+https://youtu.be/U7fi_SZaj7w.<br>
