@@ -66,35 +66,54 @@ Baris 47: Mencetak header selamat datang ke sistem gudang otomatis.<br>
 Baris 48: Memulai blok try untuk menangani kesalahan input user (bukan angka).<br>
 Baris 49: Mengambil input kapasitas maksimal dan mengubahnya ke tipe data integer.<br>
 Baris 50: Membuat objek gudang berdasarkan class StackGudang.<br>
-Baris 51: Memulai perulangan while True agar menu tampil secara berulang.<br>
-Baris 52: Mencetak pilihan Menu 1 untuk operasi Push (Masuk Barang).<br>
-Baris 53: (Baris Kosong)<br>
-Baris 54: Mencetak pilihan Menu 2 untuk operasi Pop (Ambil Barang).<br>
+Baris 51: Mengatur nilai variabel kapasitas menjadi 5 sebagai nilai standar (default).
+Baris 52: Mencetak pesan ke layar untuk memberi tahu pengguna bahwa input sebelumnya tidak sah, sehingga sistem otomatis menggunakan kapasitas default yaitu 5.<br>
+Baris 53:  (Baris Kosong)<br>
+Baris 54: Membuat objek baru bernama gudang dari class StackGudang dengan memasukkan nilai kapasitas (yaitu 5) sebagai batas maksimal daya tampung tumpukan tersebut.<br>
 Baris 55: (Baris Kosong)<br>
-Baris 56: Mencetak pilihan Menu 3 untuk operasi Peek (Lihat Barang Teratas).<br>
-Baris 57: Mencetak pilihan Menu 4 untuk operasi Display (Lihat Semua).<br>
-Baris 58: Mencetak pilihan Menu 5 untuk mengakhiri program.<br>
-Baris 59: Mengambil angka pilihan menu yang diketikkan oleh user.<br>
-Baris 60: Menjalankan logika if untuk memproses Pilihan 1 (Push).<br>
-Baris 61: Meminta user mengetikkan nama barang yang akan dimasukkan.<br>
-Baris 62: Memanggil fungsi push dengan data nama barang tersebut.<br>
-Baris 63: (Baris Kosong)<br>
-Baris 64: Menjalankan logika elif untuk memproses Pilihan 2 (Pop).<br>
-Baris 65: (Baris Kosong)<br>
-Baris 66: Memanggil fungsi pop milik objek gudang untuk mengeluarkan barang.<br>
-Baris 67: Menjalankan logika elif untuk memproses Pilihan 3 (Peek).<br>
-Baris 68: Memanggil fungsi peek untuk melihat barang di posisi teratas.<br>
-Baris 69: Menjalankan logika elif untuk memproses Pilihan 4 (Display).<br>
-Baris 70: Memanggil fungsi display untuk menampilkan denah gudang.<br>
-Baris 71: Menjalankan logika elif untuk memproses Pilihan 5 (Keluar).<br>
-Baris 72: Mencetak pesan penutup dan terima kasih kepada pengguna.<br>
-Baris 73: Menggunakan perintah break untuk memutus perulangan menu.<br>
-Baris 74: Blok else terakhir jika pilihan menu tidak ada di daftar (1-5).<br>
-Baris 75: Mencetak peringatan bahwa pilihan yang dimasukkan user salah.<br>
-Baris 76: Menutup blok try dengan except ValueError (salah tipe data).<br>
-Baris 77: Mencetak pesan bahwa input kapasitas harus berupa angka.<br>
-Baris 78: Baris tambahan untuk memisahkan logika utama dengan eksekusi.<br>
-Baris 79: Mengecek apakah file Python ini dijalankan sebagai skrip utama.<br>
+Baris 56: Memulai perulangan while True agar menu tampil secara berulang.<br>
+Baris 57: mencetak tampilan menu operasi.<br>
+Baris 58: Mencetak pilihan Menu 1 untuk operasi Push (Masuk Barang).<br>
+Baris 59: Mencetak pilihan Menu 2 untuk operasi Pop (Ambil Barang).<br>
+Baris 60: Mencetak pilihan Menu 3 untuk operasi Peek (Lihat Barang Teratas).<br>
+Baris 61: Mencetak pilihan Menu 4 untuk operasi Display (Lihat Semua).<br>
+Baris 62: Mencetak pilihan Menu 5 untuk mengakhiri program.<br>
+Baris 66: Memeriksa apakah pengguna memilih menu nomor '1' (biasanya untuk menambah barang).<br>
+Baris 67: Mengambil input teks dari pengguna berupa nama barang dan menyimpannya ke dalam variabel nama.<br>
+Baris 68: Memasukkan (push) variabel nama barang tersebut ke dalam tumpukan gudang.<br>
+Baris 69: Memeriksa apakah pengguna memilih menu nomor '2'.<br>
+Baris 70: Menghapus atau mengeluarkan (pop) barang yang berada di posisi paling atas dari tumpukan gudang.<br>
+Baris 71: Memeriksa apakah pengguna memilih menu nomor '3'.<br>
+Baris 72: Melihat (peek) barang yang berada di posisi paling atas tumpukan tanpa menghapusnya.<br>
+Baris 73: Memeriksa apakah pengguna memilih menu nomor '4'.<br>
+Baris 74: Menampilkan (display) seluruh daftar barang yang ada di dalam tumpukan gudang.<br>
+Baris 75: Memeriksa apakah pengguna memilih menu nomor '5' (untuk keluar).<br>
+Baris 76: Mencetak pesan penutup ke layar sebagai tanda program selesai digunakan.<br>
+Baris 77: Menghentikan paksa perulangan (Loop seperti while), sehingga program utama berhenti berjalan.<br>
+Baris 78: Blok alternatif jika input pilihan yang dimasukkan pengguna tidak ada di angka '1' sampai '5'.<br>
+Baris 79: Mencetak pesan peringatan bahwa input pengguna tidak valid.<br>
 Baris 80: (Baris Kosong)<br>
 Baris 81: Memanggil fungsi main() untuk mulai menjalankan aplikasi.<br>
 Baris 82: Baris akhir program sebagai tanda selesainya seluruh instruksi.<br>
+<br>
+Outuputnya:<br>
+<img width="1648" height="873" alt="Screenshot 2026-05-16 210739" src="https://github.com/user-attachments/assets/db449ba4-1ab1-418e-8996-39cc34f5e7bf" />
+<img width="1643" height="858" alt="Screenshot 2026-05-16 210807" src="https://github.com/user-attachments/assets/0baeb973-9e58-457d-9494-b2f6a6490aa7" />
+<img width="1649" height="874" alt="Screenshot 2026-05-16 210831" src="https://github.com/user-attachments/assets/219f747e-b92c-4a95-aee1-4a7fda368aca" />
+<img width="1637" height="476" alt="Screenshot 2026-05-16 210854" src="https://github.com/user-attachments/assets/88ac4687-7135-4c2e-8720-6c071048654d" />
+<br>
+penjelasannya:<br>
+1. Memasukkan Barang (Push)<br>
+Setiap kali kita memasukkan barang, barang tersebut akan diletakkan di posisi paling atas dari tumpukan yang sudah ada. Karena kapasitas gudang hanya 5, maka barang ke-6 (garpu) tidak bisa masuk karena gudang sudah tidak punya ruang lagi.
+<br>
+2. Melihat Tumpukan (Display)<br>
+Saat kita melihat isi gudang, kamu akan melihat daftar barang dari yang paling atas ke bawah. Barang yang baru saja kamu masukkan (rendang) akan terlihat di nomor urut tertinggi, sementara barang pertama yang dimasukkan (obat) berada di dasar tumpukan.<br>
+<br>
+3. Mengambil Barang (Pop)<br>
+mengambil barang yang berada di posisi paling atas terlebih dahulu. Itulah sebabnya saat "Ambil Barang" dipilih, rendang yang keluar lebih dulu, bukan obat.<br>
+<br>
+4. Keluar dari Sistem<br>
+Setelah selesai dengan semuanya (menambah, melihat, atau mengambil), memilih menu keluar untuk mematikan program.<br>
+<br>
+link youtube:<br>
+https://youtu.be/51liYVaG9iE
