@@ -148,3 +148,4 @@ Opsi untuk menghentikan program secara bersih.<br>
 Intinya: Program ini mendemonstrasikan bagaimana BST digunakan untuk mengelola kata secara efisien agar proses pencarian dan pemberian saran kata (auto-complete) berjalan sangat cepat.<br>
 <br>
 Link youtube:<br>
+https://youtu.be/Ri6-dh1tl9w
