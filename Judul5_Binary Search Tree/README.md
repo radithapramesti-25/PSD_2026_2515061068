@@ -126,3 +126,25 @@ Baris 109: Penutupan alokasi resource terminal interaktif sistem operasi.<br>
 Baris 110: (Baris Kosong)<br>
 Baris 111: Status kode keluaran (Exit Code 0) sebagai indikator program selesai sukses.<br>
 Baris 112: Baris paling akhir berkode kosong sebagai penanda penutup file Python.<br>
+<br>
+Outputnya:<br>
+<img width="1827" height="882" alt="Screenshot 2026-05-24 085831" src="https://github.com/user-attachments/assets/712ff97e-36ae-4939-a3cd-7c55b3adb71d" />
+<img width="1825" height="239" alt="Screenshot 2026-05-24 085954" src="https://github.com/user-attachments/assets/8bb214d3-8253-4a28-a0f0-90c7f081e653" />
+<br>
+Penjelasan outputnya:<br>
+Output tersebut menunjukkan simulasi Kamus Digital berbasis struktur data BST (Binary Search Tree) dengan empat fungsi utama:<br>
+1. Tambah Kata (Input)<br>
+Pengguna memasukkan kata baru (contoh: "buku") ke dalam sistem agar tersimpan dalam memori kamus.<br>
+<br>
+2. Cek Ejaan (Spell Check)<br>
+Sistem melakukan pencarian cepat di dalam database. Jika kata ditemukan (contoh: "buku"), sistem menyatakan ejaannya BENAR.<br>
+<br>
+3. Auto-Complete (Rekomendasi)<br>
+Saat pengguna mengetik awalan huruf (contoh: "b"), sistem secara otomatis mencari dan menampilkan semua kata yang berawalan huruf tersebut (seperti baca, belajar, bintang, dll.).<br>
+<br>
+4. Keluar<br>
+Opsi untuk menghentikan program secara bersih.<br>
+<br>
+Intinya: Program ini mendemonstrasikan bagaimana BST digunakan untuk mengelola kata secara efisien agar proses pencarian dan pemberian saran kata (auto-complete) berjalan sangat cepat.<br>
+<br>
+Link youtube:<br>
