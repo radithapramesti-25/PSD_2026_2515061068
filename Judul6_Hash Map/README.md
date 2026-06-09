@@ -23,136 +23,123 @@ c. Source Code & Penjelasan Logika Berbaris<br>
 <img width="1682" height="145" alt="Screenshot 2026-06-08 215714" src="https://github.com/user-attachments/assets/751eefd4-1d87-4bc6-ab2a-b7154f539386" />
 <br>
 penjelasan kodingannya perbaris:<br>
-Baris 1: Memanggil modul os untuk mengontrol sistem operasi seperti membersihkan layar.<br>
-Baris 2: (Baris Kosong)<br>
-Baris 3: Membuat class Node sebagai cetakan objek simpul untuk rantai Linked List.<br>
-Baris 4: Mendefinisikan fungsi init untuk menginisialisasi atribut awal setiap simpul.<br>
-Baris 5: Menyimpan nama kontak yang dimasukkan pengguna ke dalam variabel self.key.<br>
-Baris 6: Menyimpan nomor telepon kontak ke dalam variabel self.value.<br>
-Baris 7: Mengatur penunjuk self.next bernilai None sebagai ujung rantai simpul.<br>
-Baris 8: (Baris Kosong)<br>
-Baris 9: Membuat class BukuKontakHashMap sebagai cetakan utama tabel memori hash.<br>
-Baris 10: Mendefinisikan fungsi init untuk menentukan ukuran ruang penyimpanan data.<br>
-Baris 11: Menyimpan kapasitas maksimal tabel hash ke dalam variabel self.SIZE.<br>
-Baris 12: Membuat array self.table berisi slot kosong sebanyak kapasitas memori.<br>
-Baris 13: (Baris Kosong)<br>
-Baris 14: Membuat fungsi hash_function untuk mengubah nama kontak menjadi indeks angka.<br>
-Baris 15: Mengonversi string nama menjadi angka acak yang konsisten menggunakan fungsi hash().<br>
-Baris 16: Mengembalikan hasil modulo angka hash dengan kapasitas tabel agar pas dengan nomor slot.<br>
-Baris 17: (Baris Kosong)<br>
-Baris 18: Membuat fungsi insert untuk menambahkan atau memperbarui data kontak.<br>
-Baris 19: Mencari lokasi nomor slot memori berdasarkan nama kontak lewat fungsi hash.<br>
-Baris 20: Menunjuk variabel current ke isi data pertama pada slot memori tersebut.<br>
-Baris 21: (Baris Kosong)<br>
-Baris 22: Memulai perulangan untuk menyusuri rantai kontak selama current tidak kosong.<br>
-Baris 23: Mengecek apakah nama kontak yang dicari sudah ada di memori (mengabaikan huruf kapital).<br>
-Baris 24: Menimpa nomor telepon lama dengan nomor baru jika nama kontak sudah terdaftar.<br>
-Baris 25: Memunculkan pesan teks bahwa nomor telepon berhasil diperbarui di layar.<br>
-Baris 26: Menghentikan jalannya fungsi karena proses pembaruan data telah selesai.<br>
-Baris 27: Menggeser penunjuk current ke simpul berikutnya di dalam rantai linked list.<br>
-Baris 28: (Baris Kosong)<br>
-Baris 29: Membuat objek simpul (Node) baru untuk menyimpan nama dan nomor kontak baru.<br>
-Baris 30: Menghubungkan pointer next simpul baru ke data kontak yang sudah ada di slot.<br>
-Baris 31: Menempatkan simpul baru tersebut di urutan paling depan pada slot memori target.<br>
-Baris 32: Memunculkan pesan teks bahwa kontak baru berhasil disimpan di layar.<br>
-Baris 33: (Baris Kosong)<br>
-Baris 34: Membuat fungsi search untuk mencari nomor telepon berdasarkan nama kontak.<br>
-Baris 35: Mencari nomor slot tempat nama kontak tersebut disimpan menggunakan fungsi hash.<br>
-Baris 36: Menunjuk variabel current ke isi data pertama pada slot memori hasil hash.<br>
-Baris 37: (Baris Kosong)<br>
-Baris 38: Memulai perulangan untuk menyusuri isi rantai kontak pada slot memori tersebut.<br>
-Baris 39: Mengecek apakah ada simpul kontak yang namanya cocok dengan nama yang dicari.<br>
-Baris 40: Mengembalikan seluruh data objek simpul kontak jika nama berhasil ditemukan.<br>
-Baris 41: Menggeser penunjuk current ke simpul berikutnya di dalam rantai linked list.<br>
-Baris 42: Mengembalikan nilai None jika perulangan selesai dan kontak tidak ditemukan.<br>
-Baris 43: (Baris Kosong)<br>
-Baris 44: Membuat fungsi remove_key untuk menghapus data kontak berdasarkan nama.<br>
-Baris 45: Mencari lokasi nomor slot memori dari nama kontak menggunakan fungsi hash.<br>
-Baris 46: Menunjuk variabel current ke isi data pertama pada slot memori target.<br>
-Baris 47: Membuat variabel prev bernilai None untuk mencatat simpul sebelum current.<br>
-Baris 48: (Baris Kosong)<br>
-Baris 49: Memulai perulangan untuk menyusuri rantai kontak guna mencari data yang akan dihapus.<br>
-Baris 50: Mengecek apakah nama kontak pada simpul saat ini cocok dengan target hapus.<br>
-Baris 51: Memeriksa apakah kontak yang akan dihapus berada di urutan paling depan slot.<br>
-Baris 52: Menggeser hulu slot memori ke simpul berikutnya jika kontak terdepan dihapus.<br>
-Baris 53: Mengatur pointer simpul sebelumnya agar melompati simpul target jika data di tengah.<br>
-Baris 54: Memunculkan pesan teks bahwa data kontak sukses dihapus dari memori ponsel.<br>
-Baris 55: Mengembalikan nilai True sebagai penanda operasi penghapusan berhasil.<br>
-Baris 56: Menyimpan simpul saat ini ke variabel prev sebelum bergeser maju.<br>
-Baris 57: Menggeser penunjuk current ke simpul selanjutnya di dalam rantai linked list.<br>
-Baris 58: (Baris Kosong)<br>
-Baris 59: Memunculkan pesan teks bahwa nama kontak tidak ditemukan di dalam memori.<br>
-Baris 60: Mengembalikan nilai False sebagai penanda operasi penghapusan gagal.<br>
-Baris 61: (Baris Kosong)<br>
-Baris 62: Membuat fungsi display untuk memvisualisasikan kondisi internal memori tabel hash.<br>
-Baris 63: Mencetak garis pembatas atas untuk judul visualisasi memori ke layar terminal.<br>
-Baris 64: Melakukan perulangan untuk memeriksa setiap slot dari indeks 0 hingga batas ukuran memori.<br>
-Baris 65: Mencetak nomor urut slot memori yang sedang diperiksa tanpa berpindah baris.<br>
-Baris 66: Menunjuk variabel current ke isi data pertama pada nomor slot tersebut.<br>
-Baris 67: Memeriksa apakah slot memori tersebut kosong tidak ada isinya sama sekali.<br>
-Baris 68: Mencetak teks tulisan kosong jika slot memori tersebut bernilai None.<br>
-Baris 69: (Baris Kosong)<br>
-Baris 70: Memulai perulangan menyusuri rantai data jika slot tersebut berisi data kontak.<br>
-Baris 71: Mencetak nama kontak beserta nomor teleponnya yang tersimpan di dalam simpul.<br>
-Baris 72: Memeriksa apakah masih ada simpul data kontak lain di belakang simpul saat ini.<br>
-Baris 73: Mencetak tanda panah tabrakan data (collision) jika ada kontak lain di belakangnya.<br>
-Baris 74: Menggeser penunjuk current ke simpul berikutnya dalam rantai tersebut.<br>
-Baris 75: Melakukan perpindahan baris baru setelah semua data di satu slot selesai dicetak.<br>
-Baris 76: Mencetak garis pembatas bawah penutup visualisasi memori ke layar terminal.<br>
-Baris 77: (Baris Kosong)<br>
-Baris 78: Membuat fungsi main sebagai pengendali utama alur jalannya program.<br>
-Baris 79: Membuat objek buku kontak baru dari class BukuKontakHashMap berkapasitas 5 slot.<br>
+Baris 1: Membuat class Node sebagai cetakan objek simpul untuk penanganan tabrakan data (Separate Chaining).<br>
+Baris 2: Mendefinisikan fungsi __init__ untuk menginisialisasi atribut awal setiap objek simpul baru.<br>
+Baris 3: Menyimpan parameter nama kontak ke dalam variabel instansi self.key.<br>
+Baris 4: Menyimpan parameter nomor telepon ke dalam variabel instansi self.value.<br>
+Baris 5: Mengatur pointer self.next dengan nilai default None sebagai penunjuk ke node selanjutnya.<br>
+Baris 6: (Baris Kosong)<br>
+Baris 7: Membuat class BukuKontakHashMap sebagai blueprint struktur utama tabel hash.<br>
+Baris 8: Mendefinisikan fungsi __init__ untuk memesan kapasitas ruang penyimpanan tabel.<br>
+Baris 9: Menyimpan batas ukuran maksimal tabel ke dalam variabel self.SIZE (default bernilai 10).<br>
+Baris 10: Mengalokasikan array self.table berisi slot kosong (None) sebanyak jumlah kapasitas.<br>
+Baris 11: (Baris Kosong)<br>
+Baris 12: Membuat fungsi hash_function untuk mengonversi string nama kontak menjadi nilai indeks angka.<br>
+Baris 13: Mengubah string nama menjadi integer, melakukan operasi modulo, dan mengembalikan indeks valid (0 sampai SIZE-1).<br>
+Baris 14: (Baris Kosong)<br>
+Baris 15: Membuat fungsi insert untuk menambahkan data kontak baru atau memperbarui data yang sudah ada.<br>
+Baris 16: Memanggil fungsi hash_function untuk mencari letak nomor indeks slot dari nama kontak terkait.<br>
+Baris 17: Mengarahkan variabel penunjuk current ke elemen pertama (head) pada slot tabel hasil hash.<br>
+Baris 18: (Baris Kosong)<br>
+Baris 19: Memulai perulangan untuk menelusuri rantai simpul linked list selama current tidak bernilai None.<br>
+Baris 20: Mengecek apakah nama kontak (current.key) sudah sama persis dengan kunci yang dimasukkan.<br>
+Baris 21: Menimpa nomor telepon lama dengan nomor telepon yang baru jika nama kontak sudah terdaftar.<br>
+Baris 22: Mencetak pesan konfirmasi ke layar terminal bahwa data nomor telepon berhasil diperbarui.<br>
+Baris 23: Menghentikan eksekusi fungsi insert menggunakan perintah return karena data telah diperbarui.<br>
+Baris 24: Menggeser variabel penunjuk current maju ke simpul berikutnya di dalam untaian linked list.<br>
+Baris 25: (Baris Kosong)<br>
+Baris 26: Membuat objek simpul (Node) baru untuk menampung pasangan nama dan nomor telepon baru.<br>
+Baris 27: Menghubungkan pointer next simpul baru ke alamat data yang sebelumnya menempati posisi terdepan slot.<br>
+Baris 28: Menempatkan simpul baru tersebut menjadi elemen terdepan (head) di dalam slot indeks tabel hash.<br>
+Baris 29: Mencetak pesan konfirmasi ke layar terminal bahwa kontak baru sukses ditambahkan.<br>
+Baris 30: (Baris Kosong)<br>
+Baris 31: Membuat fungsi search untuk mendeteksi dan mengambil data kontak berdasarkan nama.<br>
+Baris 32: Mendapatkan nomor indeks slot penyimpanan berdasarkan nama kontak melalui fungsi hash.<br>
+Baris 33: Mengarahkan variabel penunjuk current ke elemen terdepan pada slot tabel di indeks tersebut.<br>
+Baris 34: (Baris Kosong)<br>
+Baris 35: Memulai perulangan untuk mencari kecocokan nama kontak di sepanjang rantai linked list.<br>
+Baris 36: Memeriksa apakah nama kontak pada simpul saat ini sama dengan nama kontak yang dicari.<br>
+Baris 37: Mengembalikan seluruh objek simpul data kontak (current) jika target berhasil ditemukan.<br>
+Baris 38: Menggeser variabel penunjuk current maju satu langkah ke simpul di belakangnya.<br>
+Baris 39: Mengembalikan nilai None sebagai tanda bahwa nama kontak tidak ditemukan setelah penelusuran selesai.<br>
+Baris 40: (Baris Kosong)<br>
+Baris 41: Membuat fungsi remove_key untuk menghapus data kontak dari tabel hash berdasarkan nama.<br>
+Baris 42: Mendapatkan nomor indeks slot penyimpanan dari nama kontak yang ingin dihapus via fungsi hash.<br>
+Baris 43: Mengarahkan variabel penunjuk current ke elemen terdepan pada slot memori target.<br>
+Baris 44: Membuat variabel bantu prev dengan nilai awal None untuk mencatat simpul sebelum current.<br>
+Baris 45: (Baris Kosong)<br>
+Baris 46: Memulai perulangan penyusuran linked list untuk memburu simpul kontak yang akan dihapus.<br>
+Baris 47: Memeriksa apakah nama kontak pada simpul saat ini cocok dengan nama target yang akan dihapus.<br>
+Baris 48: Memeriksa kondisi apakah simpul yang dicocokkan berada di urutan paling depan slot memori.<br>
+Baris 49: Memindahkan penunjuk utama tabel di indeks tersebut langsung ke simpul di belakangnya (current.next).<br>
+Baris 50: Mengondisikan pemutusan jika data di tengah/belakang, dengan mengarahkan pointer next simpul sebelum target melompati simpul target.<br>
+Baris 51: Menghubungkan pointer simpul sebelumnya (prev.next) langsung ke simpul setelah target (current.next).<br>
+Baris 52: Mencetak pesan konfirmasi sukses ke layar terminal bahwa data kontak telah berhasil dihapus.<br>
+Baris 53: Mengembalikan nilai Boolean True sebagai tanda operasi penghapusan berhasil dituntaskan.<br>
+Baris 54: Menyimpan posisi simpul saat ini ke dalam variabel prev sebelum penunjuk bergeser.<br>
+Baris 55: Menggeser variabel penunjuk current maju ke simpul berikutnya di dalam untaian linked list.<br>
+Baris 56: (Baris Kosong)<br>
+Baris 57: Mencetak notifikasi bertanda silang jika perulangan habis dan nama kontak tidak ada di memori.<br>
+Baris 58: Mengembalikan nilai Boolean False sebagai indikasi bahwa operasi penghapusan data gagal.<br>
+Baris 59: (Baris Kosong)<br>
+Baris 60: Membuat fungsi display untuk memvisualisasikan kondisi susunan slot memori internal tabel hash.<br>
+Baris 61: Mencetak baris judul penanda peta penyimpanan internal tabel hash ke layar terminal.<br>
+Baris 62: Melakukan perulangan terukur dari indeks 0 hingga batas kapasitas maksimal ukuran tabel hash.<br>
+Baris 63: Mencetak label nomor slot memori yang sedang diperiksa tanpa melakukan perpindahan baris baru.<br>
+Baris 64: Mengarahkan penunjuk variabel current ke elemen hulu pada nomor slot urutan ke-i.<br>
+Baris 65: Mengecek situasi jika slot memori tersebut kosong atau tidak menyimpan data objek sama sekali.<br>
+Baris 66: Mencetak teks tulisan "EMPTY" untuk menginformasikan bahwa slot tersebut kosong tanpa penghuni.<br>
+Baris 67: Mengondisikan blok alternatif jika slot memori terdeteksi menyimpan rangkaian simpul data.<br>
+Baris 68: Memulai perulangan sekuensial untuk mengekstrak isi rantai kontak selama current tidak kosong.<br>
+Baris 69: Mencetak nama kontak serta nomor telepon di dalam simpul dalam format pasangan terstruktur.<br>
+Line 70: Menggeser penunjuk variabel current maju untuk membaca data simpul di barisan belakangnya.<br>
+Baris 71: Mencetak teks string "None" sebagai penanda visual akhir dari ujung rantai linked list.<br>
+Baris 72: (Baris Kosong)<br>
+Baris 73: Membuat fungsi main sebagai fungsi pengatur utama alur skenario jalannya program.<br>
+Baris 74: Menginstansiasi objek buku kontak baru dengan mengeset kapasitas ukuran tabel sebanyak 5 slot.<br>
+Baris 75: (Baris Kosong)<br>
+Baris 76: Mencetak teks pemberitahuan proses pengisian data muatan mula-mula ke layar.<br>
+Baris 77: Memasukkan data kontak awal pertama dengan Nama: "Budi" dan Nomor: "081234567890".<br>
+Baris 78: Memasukkan data kontak awal kedua dengan Nama: "Andi" dan Nomor: "085711223344".<br>
+Baris 79: Memasukkan data kontak awal ketiga dengan Nama: "Siti" dan Nomor: "089988776655".<br>
 Baris 80: (Baris Kosong)<br>
-Baris 81: Memulai perulangan tanpa batas agar aplikasi menu terus berjalan berulang-ulang.<br>
-Baris 82: Mencetak judul menu aplikasi buku kontak ponsel ke layar terminal.<br>
-Baris 83: Mencetak pilihan menu 1 untuk operasi tambah atau update nomor kontak baru.<br>
-Baris 84: Mencetak pilihan menu 2 untuk operasi pencarian nomor telepon kontak.<br>
-Baris 85: Mencetak pilihan menu 3 untuk operasi penghapusan data kontak dari ponsel.<br
-Baris 86: Mencetak pilihan menu 4 untuk mengintip kondisi fisik slot penyimpanan memori.<br>
-Baris 87: Mencetak pilihan menu 5 untuk menutup dan keluar dari aplikasi buku kontak.<br>
-Baris 88: Mencetak garis pembatas bawah menu utama ke layar terminal.<br>
-Baris 89: (Baris Kosong)<br>
-Baris 90: Menangkap input angka pilihan menu dari ketikan keyboard pengguna.<br>
-Baris 91: (Baris Kosong)<br>
-Baris 92: Mengecek apakah pengguna memilih menu angka 1.<br>
-Baris 93: Mencetak sub-judul operasi penambahan dan pembaruan data kontak ke layar.<br>
-Baris 94: Menangkap input ketikan teks nama kontak dari pengguna lalu menghapus spasi kosong.<br>
-Baris 95: Memeriksa apakah input nama kontak yang dimasukkan kosong tidak diisi.<br>
-Baris 96: Menampilkan pesan kesalahan dan mengulang menu jika nama diisi kosong.<br
-Baris 97: Menangkap input ketikan teks nomor telepon dari pengguna lalu menghapus spasi kosong.<br>
-Baris 98: Memeriksa apakah input nomor telepon yang dimasukkan kosong tidak diisi.<br>
-Baris 99: Menampilkan pesan kesalahan dan mengulang menu jika nomor diisi kosong.<br>
-Baris 100: Memanggil fungsi insert untuk memproses dan menyimpan data kontak ke tabel hash.<br>
-Baris 101: (Baris Kosong)<br>
-Baris 102: Mengecek apakah pengguna memilih menu angka 2.<br>
-Baris 103: Mencetak sub-judul operasi pencarian data kontak ke layar terminal.<br>
-Baris 104: Menangkap input ketikan nama kontak yang ingin dicari nomor teleponnya.<br>
-Baris 105: Memanggil fungsi search untuk melacak keberadaan data kontak di tabel hash.<br>
-Baris 106: Memeriksa apakah data kontak yang dicari berhasil ditemukan (tidak None).<br>
-Baris 107: Menampilkan informasi detail nama dan nomor telepon yang ditemukan ke layar.<br>
-Baris 108: (Baris Kosong)<br>
-Baris 109: Menampilkan informasi bahwa nama kontak tidak terdaftar jika hasil pencarian kosong.<br>
-Baris 110: (Baris Kosong)<br>
-Baris 111: Mengecek apakah pengguna memilih menu angka 3.<br>
-Baris 112: Mencetak sub-judul operasi penghapusan data kontak ke layar terminal.<br>
-Baris 113: Menangkap input ketikan nama kontak yang ingin dihapus dari memori ponsel.<br>
-Baris 114: Memanggil fungsi remove_key untuk memproses pemutusan rantai kontak di tabel hash.<br>
+Baris 81: Membuka struktur kontrol blok perulangan while True untuk memproses menu interaktif tanpa henti.<br>
+Baris 82: Mencetak baris teks komponen judul atas dari aplikasi buku kontak ponsel.<br>
+Baris 83: Mencetak teks pilihan opsi menu ke-1 untuk melakukan penambahan atau pembaruan kontak.<br>
+Baris 84: Mencetak teks pilihan opsi menu ke-2 untuk melakukan pencarian nomor telepon kontak.<br>
+Baris 85: Mencetak teks pilihan opsi menu ke-3 untuk mengeksekusi penghapusan data kontak.<br>
+Baris 86: Mencetak teks pilihan opsi menu ke-4 untuk menampilkan visual memori internal tabel hash.<br>
+Baris 87: Mencetak teks pilihan opsi menu ke-5 untuk keluar dan menghentikan proses aplikasi.<br>
+Baris 88: Membuka blok penanganan kesalahan try untuk mengantisipasi kesalahan ketik input dari pengguna.<br>
+Baris 89: Mengambil data masukan dari keyboard pengguna dan mengonversinya langsung menjadi tipe integer.<br>
+Baris 90: Menangkap galat ValueError jika pengguna tidak menginputkan karakter berbentuk nomor angka bulat.<br>
+Baris 91: Memberikan umpan balik peringatan agar pengguna mengetikkan masukan berupa tipe angka saja.<br>
+Baris 92: Memberikan instruksi continue untuk melompat kembali ke awal perulangan menu utama.<br>
+Baris 93: (Baris Kosong)<br>
+Baris 94: Melakukan pengujian logis jika angka pilihan menu yang dimasukkan pengguna adalah 1.<br>
+Baris 95: Mengambil input ketikan teks keyboard dari pengguna untuk mengisi nama kontak baru.<br>
+Baris 96: Mengambil input ketikan teks keyboard dari pengguna untuk mengisi nomor telepon kontak baru.<br>
+Baris 97: Memanggil fungsi insert milik objek buku_kontak untuk menyimpan atau meng-update data.<br>
+Baris 98: Melakukan pengujian logis jika angka pilihan menu yang dimasukkan pengguna adalah 2.<br>
+Baris 99: Meminta pengguna mengetikkan nama kontak yang ingin dilacak nomor teleponnya.<br>
+Baris 100: Memanggil fungsi search untuk melakukan pencarian dan hasilnya ditampung di variabel hasil.<br>
+Baris 101: Memeriksa apakah variabel hasil sukses mendapatkan objek simpul kontak (tidak None).<br>
+Baris 102: Menampilkan nama kontak beserta informasi nomor teleponnya secara lengkap ke layar.<br>
+Baris 103: Mengondisikan blok alternatif jika pencarian nama kontak menghasilkan nilai kosong (None).<br>
+Baris 104: Menampilkan pesan teks informasi bahwa nama kontak yang dicari tidak terdaftar.<br>
+Baris 105: Melakukan pengujian logis jika angka pilihan menu yang dimasukkan pengguna adalah 3.<br>
+Baris 106: Meminta pengguna memasukkan nama kontak yang ingin dihapus secara permanen dari ponsel.<br>
+Baris 107: Memanggil fungsi remove_key untuk mengeksekusi penghapusan simpul dari struktur tabel hash.<br>
+Baris 108: Melakukan pengujian logis jika angka pilihan menu yang dimasukkan pengguna adalah 4.<br>
+Baris 109: Memanggil fungsi display untuk memunculkan kondisi visual internal slot memori tabel hash.<br>
+Baris 110: Melakukan pengujian logis jika angka pilihan menu yang dimasukkan pengguna adalah 5.<br>
+Baris 111: Mencetak teks kalimat salam perpisahan penutupan aplikasi ke layar terminal.<br>
+Baris 112: Menggunakan perintah break untuk keluar dari loop while guna mematikan jalannya skrip.<br>
+Baris 113: Mengondisikan penanganan jika angka menu yang diketik berada di luar jangkauan angka 1-5.<br>
+Baris 114: Mencetak pesan teks peringatan bahwa pilihan menu yang dimasukkan tidak valid.<br>
 Baris 115: (Baris Kosong)<br>
-Baris 116: Mengecek apakah pengguna memilih menu angka 4.<br>
-Baris 117: Memanggil fungsi display untuk memunculkan struktur peta slot memori di terminal.<br>
-Baris 118: (Baris Kosong)<br>
-Baris 119: Mengecek apakah pengguna memilih menu angka 5.<br>
-Baris 120: Mencetak ucapan terima kasih dan salam perpisahan penutupan aplikasi ke layar.<br>
-Baris 121: Menghentikan paksa perulangan menu utama agar program selesai berjalan.<br>
-Baris 122: (Baris Kosong)<br>
-Baris 123: Menangani kondisi jika pengguna menginputkan karakter di luar angka menu 1 sampai 5.<br>
-Baris 124: Menampilkan notifikasi pesan kesalahan bahwa input menu pengguna tidak valid.<br>
-Baris 125: (Baris Kosong)<br>
-Baris 126: Menahan tampilan layar sementara agar pengguna sempat membaca output di layar.<br>
-Baris 127: Membersihkan layar terminal agar kembali bersih sebelum menampilkan menu utama lagi.<br>
-Baris 128: (Baris Kosong)<br>
-Baris 129: Mengecek apakah file skrip Python ini dijalankan sebagai program utama.<br>
-Baris 130: Memanggil fungsi main() untuk memicu jalannya seluruh rangkaian program aplikasi.<br>
+Baris 116: Mengecek kondisi lingkungan apakah file ini bertindak sebagai modul utama yang dijalankan.<br>
+Baris 117: Mengeksekusi fungsi main() untuk mengaktifkan seluruh fungsionalitas program dari awal.<br>
 <br>
 outputnya:<br>
 <img width="1651" height="864" alt="Screenshot 2026-06-09 194452" src="https://github.com/user-attachments/assets/8f4ef5d8-a1fc-4b49-9456-1e55070fa37c" />
