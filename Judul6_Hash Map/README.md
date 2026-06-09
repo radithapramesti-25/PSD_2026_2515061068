@@ -154,4 +154,6 @@ Alokasi Slot Memori: Tabel memiliki 5 ruang penyimpanan (Slot 0 sampai Slot 4). 
 Penyimpanan Data Tunggal: Pada Slot 3, terdapat satu data kontak tunggal yang disimpan, yaitu (budi -> 08123).<br>
 <br>
 Fenomena Tabrakan Data (Collision): Pada Slot 2, terjadi kondisi di mana nama kontak siti dan wawan menghasilkan nilai indeks hash yang sama. Sistem berhasil menangani benturan ini tanpa menimpa data lama dengan cara merangkaikannya menggunakan rantai Linked List, yang divisualisasikan dengan tanda penunjuk arah ==collision==>.<br>
+<br>
 Link Youtube:<br>
+https://youtu.be/QfXTw6gkORc
